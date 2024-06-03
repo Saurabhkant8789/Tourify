@@ -70,7 +70,7 @@ const authSlice = createSlice({
     },
     [login.rejected]: (state, action) => {
       state.loading = false;
-      state.error = action.payload.message;
+      state.error = action.payload?.message;
     },
     [register.pending]: (state, action) => {
       state.loading = true;
@@ -82,7 +82,7 @@ const authSlice = createSlice({
     },
     [register.rejected]: (state, action) => {
       state.loading = false;
-      state.error = action.payload.message;
+      state.error = action.payload?.message;
     },
     [googleSignIn.pending]: (state, action) => {
       state.loading = true;
@@ -94,7 +94,7 @@ const authSlice = createSlice({
     },
     [googleSignIn.rejected]: (state, action) => {
       state.loading = false;
-      state.error = action.payload.message;
+      state.error = action.payload?.message;
     },
   },
 });

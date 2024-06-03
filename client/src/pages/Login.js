@@ -14,7 +14,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { googleSignIn, login } from "../redux/features/authSlice";
 import { GoogleLogin } from "react-google-login";
-import { gapi } from 'gapi-script';
+import { loadGapiInsideDOM } from 'gapi-script';
+const gapi = await loadGapiInsideDOM();
 
 const initialState = {
   email: "",

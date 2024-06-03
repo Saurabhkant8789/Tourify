@@ -33,8 +33,8 @@ app.use("/users", userRouter); // http://localhost:5000/user/signup
 
 app.use("/tour", tourRouter);
 
-const MONGODB_URL = 
-"mongodb+srv://sourabhchandel59:u5y9cpwrday2IZ1A@cluster0.cr499ok.mongodb.net/tour_db?retryWrites=true&w=majority";
+// const MONGODB_URL = 
+// "mongodb+srv://sourabhchandel59:u5y9cpwrday2IZ1A@cluster0.cr499ok.mongodb.net/tour_db?retryWrites=true&w=majority";
 
 const port = 8000;
 
@@ -52,7 +52,7 @@ const port = 8000;
 //     console.log(`server running on port ${port}`);
 // });
 
-// var db = "mongodb://localhost:27017/example";
+var MONGODB_URL = "mongodb://localhost:27017/example";
 
 // mongoose.;`
 
