@@ -17,21 +17,21 @@ API.interceptors.request.use((req) => {
   return req;
 });
 
-export const signIn = (formData) => API.post("http://localhost:8000/users/signin", formData);
-export const signUp = (formData) => API.post("http://localhost:8000/users/signup", formData);
-export const googleSignIn = (result) => API.post("http://localhost:8000/users/googleSignIn", result);
+export const signIn = (formData) => API.post("https://tourify-koei.onrender.com/users/signin", formData);
+export const signUp = (formData) => API.post("https://tourify-koei.onrender.com/users/signup", formData);
+export const googleSignIn = (result) => API.post("https://tourify-koei.onrender.com/users/googleSignIn", result);
 
-export const createTour = (tourData) => API.post("http://localhost:8000/tour/", tourData);
-export const getTours = (page) => API.get(`http://localhost:8000/tour?page=${page}`);
-export const getTour = (id) => API.get(`http://localhost:8000/tour/${id}`);
-export const deleteTour = (id) => API.delete(`http://localhost:8000/tour/${id}`);
+export const createTour = (tourData) => API.post("https://tourify-koei.onrender.com/tour/", tourData);
+export const getTours = (page) => API.get(`https://tourify-koei.onrender.com/tour?page=${page}`);
+export const getTour = (id) => API.get(`https://tourify-koei.onrender.com/tour/${id}`);
+export const deleteTour = (id) => API.delete(`https://tourify-koei.onrender.com/tour/${id}`);
 export const updateTour = (updatedTourData, id) =>
-  API.patch(`http://localhost:8000/tour/${id}`, updatedTourData);
-export const getToursByUser = (userId) => API.get(`http://localhost:8000/tour/userTours/${userId}`);
+  API.patch(`https://tourify-koei.onrender.com/tour/${id}`, updatedTourData);
+export const getToursByUser = (userId) => API.get(`https://tourify-koei.onrender.com/tour/userTours/${userId}`);
 
 export const getToursBySearch = (searchQuery) =>
-  API.get(`http://localhost:8000/tour/search?searchQuery=${searchQuery}`);
+  API.get(`https://tourify-koei.onrender.com/tour/search?searchQuery=${searchQuery}`);
 
-export const getTagTours = (tag) => API.get(`http://localhost:8000/tour/tag/${tag}`);
-export const getRelatedTours = (tags) => API.post(`http://localhost:8000/tour/relatedTours`, tags);
-export const likeTour = (id) => API.patch(`http://localhost:8000/tour/like/${id}`);
+export const getTagTours = (tag) => API.get(`https://tourify-koei.onrender.com/tour/tag/${tag}`);
+export const getRelatedTours = (tags) => API.post(`https://tourify-koei.onrender.com/tour/relatedTours`, tags);
+export const likeTour = (id) => API.patch(`https://tourify-koei.onrender.com/tour/like/${id}`);
