@@ -52,7 +52,7 @@ const port = 8000;
 //     console.log(`server running on port ${port}`);
 // });
 
-var MONGODB_URL = "mongodb://localhost:27017/example";
+var MONGODB_URL = "mongodb+srv://saurabhkant988:8Etoywo8BtiQXUoM@tourify.mcg3d.mongodb.net";
 
 // mongoose.;`
 
